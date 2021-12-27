@@ -29,10 +29,16 @@ func (s *StackMin) Pop() interface{} {
 	return value
 }
 func (s *StackMin) Push(item interface{}) {
-	min := s.minimus.Peek()
 	value := item.(int)
-	if value < min.(int) {
+	min := value
+	if s.minimus.IsEmpty() {
+		s.minimus.Push(item)
+		min = value
+	} else {
+		min = s.minimus.Peek().(int)
+	}
+	if value < min {
 		s.minimus.Push(value)
 	}
-	s.values.Push(item)
+	s.values.Push(value)
 }
