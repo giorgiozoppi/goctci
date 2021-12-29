@@ -7,6 +7,6 @@ Exercise 4.2 (minimaltree)
 - Given a sorted increasing order array with unique integer elements, 
   write an algorithm to create a binary search tree with minimal height
 Exercice 4.3 (list of depths)
-- Given a binary tree, design an algorithm which creates a linked ist of all nodes
+- Given a binary tree, design an algorithm which creates a linkedlist of all nodes
   at each depth.
  
